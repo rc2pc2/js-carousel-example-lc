@@ -38,3 +38,16 @@ nextButton.addEventListener('click', function(){
     // % aggiungo la classe active al nuovo elemento con activeIndex
     imageElements[activeIndex].classList.add('active');
 });
+
+
+
+const prevButton = document.querySelector('button.prev');
+
+prevButton.addEventListener('click', function(){
+    imageElements[activeIndex].classList.remove('active');
+
+    // ? decremento active index
+    activeIndex = activeIndex - 1;
+
+    imageElements[activeIndex].classList.add('active');
+});

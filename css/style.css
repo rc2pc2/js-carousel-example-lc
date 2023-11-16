@@ -54,13 +54,14 @@ button{
     position: absolute;
     display: inline-block;
     /* font-size: 1.5rem; */
-    background-color: magenta;
+    background-color: rgba(255,255,255, .9);
     border-radius: 50%;
     border: none;
     top: 50%;
     height: 50px;
     width: 50px;
     transform: translateY(-50%);
+    transition: all .5s ease-out;
 }
 
 button:hover{
